@@ -11,7 +11,7 @@ namespace regexDemo
         {
             Console.Write("Enter PIN code : ");
             string input = Console.ReadLine();
-            string sampleRegex = "^[0-9]{6}$";
+            string sampleRegex = "^[1-9]{1}[0-9]{2}\\s{0,1}[0-9]{3}$";
 
             Regex rg = new Regex(sampleRegex);
             Boolean result = rg.IsMatch(input);
